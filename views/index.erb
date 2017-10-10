@@ -1,0 +1,17 @@
+
+<% @pizzas.each do |pizza| %>
+<div id="pizzablock">
+  
+  <div id="order">
+
+  <p>Name: <%= pizza.pretty_name() %></p>
+  <p>Order: <%= pizza.quantity() %> x <%= pizza.topping() %></p>
+  <p><a href="/pizzas/<%= pizza.id %>">Show order</a></p>
+  <p><a href="/pizzas/<%= pizza.id %>/edit">Edit order</a></p>
+  <p><a href="/pizzas/<%= pizza.id %>/delete">Delete order</a></p>
+</div>
+<img src="/pizza.png" alt="Pizza Slice">
+</div>
+  <hr />
+
+<% end %>
