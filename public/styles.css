@@ -27,14 +27,16 @@ h1 {
 
 li {
   display: inline-block; margin-right: 10px;
-  }
+}
 
 #content {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 #pizzablock {
-  background-color: #58A4B0;
+  background-color: tomato;
+  border: 1px solid #73413e;
   padding: 15px;
   font-weight: bold;
   display: flex;
